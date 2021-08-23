@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PhraseSDK",
+        "repositoryURL": "https://github.com/phrase/ios-sdk/",
+        "state": {
+          "branch": null,
+          "revision": "d82099c58897090f63f204b0403a22d7f2b7ced4",
+          "version": "3.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
