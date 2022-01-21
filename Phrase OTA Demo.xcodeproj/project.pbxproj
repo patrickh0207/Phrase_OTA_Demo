@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDAC414B2770A37F00741E56 /* PhraseSDK in Frameworks */ = {isa = PBXBuildFile; productRef = CDAC414A2770A37F00741E56 /* PhraseSDK */; };
 		CDC6536026D3C5BF00C8939B /* Phrase_OTA_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6535F26D3C5BF00C8939B /* Phrase_OTA_DemoApp.swift */; };
 		CDC6536226D3C5BF00C8939B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6536126D3C5BF00C8939B /* ContentView.swift */; };
 		CDC6536426D3C5C000C8939B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC6536326D3C5C000C8939B /* Assets.xcassets */; };
 		CDC6536726D3C5C000C8939B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC6536626D3C5C000C8939B /* Preview Assets.xcassets */; };
-		CDC6537026D3C60A00C8939B /* PhraseSDK in Frameworks */ = {isa = PBXBuildFile; productRef = CDC6536F26D3C60A00C8939B /* PhraseSDK */; };
 		CDC6537326D3C67B00C8939B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDC6537526D3C67B00C8939B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC6537026D3C60A00C8939B /* PhraseSDK in Frameworks */,
+				CDAC414B2770A37F00741E56 /* PhraseSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 			);
 			name = "Phrase OTA Demo";
 			packageProductDependencies = (
-				CDC6536F26D3C60A00C8939B /* PhraseSDK */,
+				CDAC414A2770A37F00741E56 /* PhraseSDK */,
 			);
 			productName = "Phrase OTA Demo";
 			productReference = CDC6535C26D3C5BF00C8939B /* Phrase OTA Demo.app */;
@@ -122,7 +122,7 @@
 			);
 			mainGroup = CDC6535326D3C5BF00C8939B;
 			packageReferences = (
-				CDC6536E26D3C60A00C8939B /* XCRemoteSwiftPackageReference "ios-sdk" */,
+				CDAC41492770A37F00741E56 /* XCRemoteSwiftPackageReference "ios-sdk" */,
 			);
 			productRefGroup = CDC6535D26D3C5BF00C8939B /* Products */;
 			projectDirPath = "";
@@ -294,8 +294,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Phrase OTA Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = 56Y58637AY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Phrase OTA Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -305,6 +307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "phrase.com.Phrase-OTA-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,8 +318,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Phrase OTA Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = 56Y58637AY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Phrase OTA Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -326,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "phrase.com.Phrase-OTA-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,20 +361,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CDC6536E26D3C60A00C8939B /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
+		CDAC41492770A37F00741E56 /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/phrase/ios-sdk/";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.1;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CDC6536F26D3C60A00C8939B /* PhraseSDK */ = {
+		CDAC414A2770A37F00741E56 /* PhraseSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CDC6536E26D3C60A00C8939B /* XCRemoteSwiftPackageReference "ios-sdk" */;
+			package = CDAC41492770A37F00741E56 /* XCRemoteSwiftPackageReference "ios-sdk" */;
 			productName = PhraseSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

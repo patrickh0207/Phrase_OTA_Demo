@@ -14,20 +14,20 @@ struct Phrase_OTA_DemoApp: App {
         Phrase.shared.setup(
           distributionID: "",
           environmentSecret: ""
-          // timeout: 10000,
-          //localeOverride: "de"
+          // timeout: 10.0,
+          // localeOverride: "de"
         )
         do {
             try Phrase.shared.updateTranslations { result in
                 switch result {
                 case .success(_):
-                    print("Translations download successful.")
+                    print("Translation download successful.")
                 case .failure:
-                    print("Translations download failed")
+                    print("Translation download failed.")
                 }
             }
         } catch {
-            print("error")
+            print("An error occurred.")
         }
     }
     var body: some Scene {

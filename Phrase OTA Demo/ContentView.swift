@@ -7,10 +7,22 @@
 
 import SwiftUI
 
+extension Color {
+    static let phraseBlue = Color("PhraseBlue")
+}
+
 struct ContentView: View {
     var body: some View {
-        Text(NSLocalizedString("my-key", comment: "An example."))
-            .padding()
+        
+        ZStack {
+            Color.phraseBlue
+                .ignoresSafeArea()
+                   
+            Text(NSLocalizedString("app.text", comment: "An example."))
+                .font(.largeTitle)
+                .padding()
+                .foregroundColor(.white)
+           }
     }
 }
 

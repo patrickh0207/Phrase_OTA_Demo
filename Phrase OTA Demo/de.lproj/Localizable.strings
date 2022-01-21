@@ -1,1 +1,2 @@
-"my-key" = "Das ist eine gebundelte Übersetzung.";
+"app.title" = "Phrase Over the Air";
+"app.text" = "Das ist eine Übersetzung aus dem Bundle.";
